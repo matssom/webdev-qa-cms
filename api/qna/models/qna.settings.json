@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qnas",
+  "info": {
+    "name": "qna",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "answer": {
+      "type": "richtext"
+    },
+    "topic": {
+      "type": "enumeration",
+      "enum": [
+        "general",
+        "final_project",
+        "innovation_camp_website",
+        "make_it_responsive",
+        "freaky_friday",
+        "se_it_correct_it_now_make_it",
+        "pact",
+        "communication",
+        "innovation_camp"
+      ]
+    }
+  }
+}
