@@ -12,24 +12,15 @@
   },
   "attributes": {
     "question": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "answer": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
-    "topic": {
-      "type": "enumeration",
-      "enum": [
-        "general",
-        "final_project",
-        "innovation_camp_website",
-        "make_it_responsive",
-        "freaky_friday",
-        "se_it_correct_it_now_make_it",
-        "pact",
-        "communication",
-        "innovation_camp"
-      ]
+    "question_type": {
+      "model": "question-type"
     }
   }
 }
